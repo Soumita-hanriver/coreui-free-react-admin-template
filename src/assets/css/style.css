@@ -1,0 +1,9 @@
+.jumbotron {
+    padding: 20px 10px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.jumbotron .btn {
+	margin:  10px;
+}

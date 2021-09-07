@@ -1,7 +1,7 @@
 import React from 'react'
 
 // examples
-
+const Managers = React.lazy(() => import('./views/admin/managers/Managers'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -57,6 +57,8 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
+  { path: '/admin', name: 'Users', component: Managers, exact: true },
+  { path: '/admin/managers', name: 'Managers', component: Managers },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
