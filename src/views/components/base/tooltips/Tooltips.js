@@ -1,6 +1,6 @@
 import React from 'react'
 import { CButton, CCard, CCardBody, CCardHeader, CLink, CTooltip, CRow, CCol } from '@coreui/react'
-import { DocsCallout, Example } from 'src/reusable'
+import { DocsCallout, DocsExample } from 'src/components'
 
 const Tooltips = () => {
   return (
@@ -17,7 +17,7 @@ const Tooltips = () => {
             <p className="text-medium-emphasis small">
               Hover over the links below to see tooltips:
             </p>
-            <Example href="components/tooltip">
+            <DocsExample href="components/tooltip">
               <p className="text-medium-emphasis">
                 Tight pants next level keffiyeh
                 <CTooltip content="Tooltip text">
@@ -41,12 +41,12 @@ const Tooltips = () => {
                 </CTooltip>
                 freegan cred raw denim single-origin coffee viral.
               </p>
-            </Example>
+            </DocsExample>
             <p className="text-medium-emphasis small">
               Hover over the buttons below to see the four tooltips directions: top, right, bottom,
               and left. Directions are mirrored when using CoreUI in RTL.
             </p>
-            <Example href="components/tooltip">
+            <DocsExample href="components/tooltip">
               <CTooltip
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
                 placement="top"
@@ -55,7 +55,7 @@ const Tooltips = () => {
               </CTooltip>
               <CTooltip
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                placement="end"
+                placement="right"
               >
                 <CButton color="secondary">Tooltip on right</CButton>
               </CTooltip>
@@ -67,11 +67,11 @@ const Tooltips = () => {
               </CTooltip>
               <CTooltip
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                placement="start"
+                placement="left"
               >
                 <CButton color="secondary">Tooltip on left</CButton>
               </CTooltip>
-            </Example>
+            </DocsExample>
           </CCardBody>
         </CCard>
       </CCol>

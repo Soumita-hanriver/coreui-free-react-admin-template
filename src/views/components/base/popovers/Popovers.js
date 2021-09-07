@@ -1,6 +1,6 @@
 import React from 'react'
 import { CButton, CCard, CCardBody, CCardHeader, CPopover, CRow, CCol } from '@coreui/react'
-import { DocsCallout, Example } from 'src/reusable'
+import { DocsCallout, DocsExample } from 'src/components'
 
 const Popovers = () => {
   return (
@@ -14,17 +14,17 @@ const Popovers = () => {
             <strong>React Popover</strong> <small>Basic example</small>
           </CCardHeader>
           <CCardBody>
-            <Example href="components/popover">
+            <DocsExample href="components/popover">
               <CPopover
                 title="Popover title"
                 content="And here’s some amazing content. It’s very engaging. Right?"
-                placement="end"
+                placement="right"
               >
                 <CButton color="danger" size="lg">
                   Click to toggle popover
                 </CButton>
               </CPopover>
-            </Example>
+            </DocsExample>
           </CCardBody>
         </CCard>
       </CCol>
@@ -38,7 +38,7 @@ const Popovers = () => {
               Four options are available: top, right, bottom, and left aligned. Directions are
               mirrored when using CoreUI for React in RTL.
             </p>
-            <Example href="components/popover#four-directions">
+            <DocsExample href="components/popover#four-directions">
               <CPopover
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
                 placement="top"
@@ -47,7 +47,7 @@ const Popovers = () => {
               </CPopover>
               <CPopover
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                placement="end"
+                placement="right"
               >
                 <CButton color="secondary">Popover on right</CButton>
               </CPopover>
@@ -59,11 +59,11 @@ const Popovers = () => {
               </CPopover>
               <CPopover
                 content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                placement="start"
+                placement="left"
               >
                 <CButton color="secondary">Popover on left</CButton>
               </CPopover>
-            </Example>
+            </DocsExample>
           </CCardBody>
         </CCard>
       </CCol>
